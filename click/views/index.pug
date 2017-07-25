@@ -23,10 +23,10 @@ block content
               .panel-body
                 .row
                   .col-md-12
-                    button.btn.btn-primary 0
+                    button#click.btn.btn-primary(value="0") 0
                 .row
                   .col-md-12
-                    button.btn.btn-block reset
+                    button#reset.btn.btn-block reset
           .col-md-3.text-center
             .panel.panel-default
               .panel-heading
@@ -34,10 +34,10 @@ block content
               .panel-body
                 .row
                   .col-md-12
-                    button.btn.btn-primary 0
+                    button#btnlocalStorage.btn.btn-primary 
                 .row
                   .col-md-12
-                    button.btn.btn-block reset
+                    button#btnResetLocalStorage.btn.btn-block reset
           .col-md-3.text-center
             .panel.panel-default
               .panel-heading
@@ -48,6 +48,7 @@ block content
                     button.btn.btn-primary 0
                 .row
                   .col-md-12
+                    button.btn.btn-block reset  
                     button.btn.btn-block reset
-        
-        
+  script(src='/javascript/sessions.js')      
+  script(src="/javascripts/localstorage.js")
