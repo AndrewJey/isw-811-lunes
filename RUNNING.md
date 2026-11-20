@@ -29,3 +29,10 @@ Inventario y compilaciones locales del 2026-11-15. Una compilación correcta no 
 
 `.gitignore` excluye credenciales locales, estado del editor y salidas de las herramientas detectadas. No deja de versionar archivos que ya estaban en Git. Los manifiestos, archivos de bloqueo, recursos fuente y scripts de esquema forman parte del código.
 <!-- local-development:end -->
+
+<!-- improvements-20261119:start -->
+## Mejoras y verificación funcional (2026-11-19)
+
+- **Mejoras aplicadas:** Servidor HTTP nativo Node 22+ sin dependencias vulnerables (`click/server.mjs` y `click/lib/store.mjs`), corrección de `routes/sessions.js`, interfaz responsiva con los 4 contadores operativos (Cookies, Sessions, LocalStorage y API DB con `+1`/`−1`/`Reiniciar` y sincronización entre pestañas).
+- **Pruebas ejecutadas:** `node --test click/tests/app.test.mjs` (prueba HTTP en vivo aprobada: HTML, `/health`, `/sessions`, `/cookies` y CRUD persistente `/api/v1/clicks`).
+<!-- improvements-20261119:end -->
